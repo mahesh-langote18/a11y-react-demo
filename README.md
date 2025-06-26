@@ -1,69 +1,51 @@
-# React + TypeScript + Vite
+# ♿️ Accessibility Demo: React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a live demonstration of **web accessibility best practices and common pitfalls**. It includes two pages — one intentionally buggy (`/buggy`) and another fully fixed (`/fixed`) — for use in workshops or audits.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔀 Pages
 
-## Expanding the ESLint configuration
+### 🐞 `/buggy`
+- Includes 10 common accessibility issues (e.g., missing labels, focus traps, low contrast, ARIA misuse).
+- Useful for demonstrating Axe, Lighthouse, and manual testing failures.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ✅ `/fixed`
+- Proper use of semantic HTML, focus management, ARIA roles, and color contrast.
+- Implements a fully accessible modal using `react-focus-lock`.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧰 Tools Used
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🔍 Testing Tools
+- [Axe DevTools](https://www.deque.com/axe/devtools/)
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+- Native **keyboard testing** (Tab, Shift+Tab, Enter)
+- Screen Readers (VoiceOver, NVDA)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔧 Libraries
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+- [React Focus Lock](https://github.com/theKashey/react-focus-lock)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📸 Demo
+
+### Buggy Page
+![Buggy Page Screenshot](./screenshots/buggy-page.png)
+
+### Fixed Page
+![Fixed Page Screenshot](./screenshots/fixed-page.png)
+
+---
+
+## 🛠️ Getting Started
+
+### 📦 Install dependencies
+
+```bash
+npm install
