@@ -4,7 +4,7 @@ html,body{
   font-family: Arial, sans-serif;
   height: 100%;
   width: 100%;
-  font-size: 22px;
+  font-size: 18px;
   font-family: sans-serif;
 }
 *{
@@ -66,7 +66,7 @@ html,body{
   z-index: 1000;
 }
 .nav-link {
-  font-size: 22px;
+  font-size: 18px;
   margin-right: 1rem;
   font-weight: bold;
   color: #210000;
@@ -108,7 +108,7 @@ input{
 }
 img{
   margin-left: 20px;
-  width: 350px ;
+  width: 300px ;
   font-size: 27px;
   height: auto;
   animation: float 3s ease-in-out infinite;

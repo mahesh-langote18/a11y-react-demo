@@ -12,7 +12,7 @@ export default function BuggyPage() {
 
   return (
     <div className="buggy-page">
-      <h1>Accessibility Page 1</h1>
+      <h1>Buggy Accessibility Page</h1>
 
       {/* ❌ Bug 1: No skip link */}
 

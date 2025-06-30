@@ -4,9 +4,9 @@ export default function Navbar() {
   return (
     <nav style={{ marginBottom: "1rem" }}>
       <Link to="/buggy" className="nav-link">
-         Page 1
+         Buggy Page
       </Link>
-      <Link to="/fixed" className="nav-link">Page 2</Link>
+      <Link to="/fixed" className="nav-link">Fixed Page</Link>
     </nav>
   );
 }

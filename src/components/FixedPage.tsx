@@ -19,7 +19,7 @@ export default function FixedPage() {
         Skip to main content
       </a>
 
-      <h1>Accessibility Page 2</h1>
+      <h1>Accessible Page</h1>
       <button className="icon-btn" aria-label="Trigger alert" onClick={() => alert("clicked")}>
         🔔
       </button>
