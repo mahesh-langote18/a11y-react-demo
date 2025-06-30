@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
+import giveAcessImage from "../assets/give-access.png";
 export default function BuggyPage() {
   const [showModal, setShowModal] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -11,16 +11,19 @@ export default function BuggyPage() {
   }, [showModal]);
 
   return (
-    <div>
-      <h1>Buggy Accessibility Page</h1>
+    <div className="buggy-page">
+      <h1>Accessibility Page 1</h1>
 
       {/* ❌ Bug 1: No skip link */}
 
-      {/* ❌ Bug 2: Image without alt */}
-      <img src="/logo.png" />
-
       {/* ❌ Bug 3: Button with no label */}
-      <button onClick={() => alert("clicked")}></button>
+      <button className="icon-btn" onClick={() => alert("clicked")}>🔔</button>
+
+      {/* ❌ Bug 2: Image without alt */}
+      <img src={giveAcessImage} />
+
+    <div className="page-content">
+
 
       {/* ❌ Bug 4: Skipped heading levels */}
       <h2>Page Content</h2>
@@ -49,10 +52,12 @@ export default function BuggyPage() {
         Low contrast text
       </p>
 
-      {/* ❌ Bug 9: Link with no href */}
-      <a>Broken Link</a>
+
 
       {/* ❌ Bug 10: No focus trap in modal */}
+    </div>
+          {/* ❌ Bug 9: Link with no href */}
+      <a className="bk-link">Back to content</a>
     </div>
   );
 }

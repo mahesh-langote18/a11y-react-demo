@@ -4,11 +4,12 @@ html,body{
   font-family: Arial, sans-serif;
   height: 100%;
   width: 100%;
-  font-size: 16px;
+  font-size: 22px;
   font-family: sans-serif;
-  padding: 2rem;
 }
-
+*{
+  box-sizing: border-box;
+}
 .modal {
   position: fixed;
   top: 30%;
@@ -50,6 +51,9 @@ html,body{
   height: 1px;
   overflow: hidden;
 }
+.bk-link{
+  margin-top: 900px;
+}
 
 .skip-link:focus {
   left: 1rem;
@@ -60,4 +64,65 @@ html,body{
   color: #fff;
   padding: 0.5rem;
   z-index: 1000;
+}
+.nav-link {
+  font-size: 22px;
+  margin-right: 1rem;
+  font-weight: bold;
+  color: #210000;
+  padding: 5px 10px;
+  &:focus {
+background-color: #dedede;  
+  color: #7a0707;
+}
+}
+.buggy-page,.fixed-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-btn{
+ font-size: 36px;
+ border: none;
+}
+.page-content {
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 800px;
+  padding: 10px 10px 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+button{
+  padding: 10px;
+  margin: 0 10px ;
+  font-size: 20px;
+}
+input{
+  min-height: 40px;
+}
+img{
+  margin-left: 20px;
+  width: 350px ;
+  font-size: 27px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+  border-radius: 8px;
+}
+@keyframes float{
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

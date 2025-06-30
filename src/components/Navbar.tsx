@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav style={{ marginBottom: "1rem" }}>
-      <Link to="/buggy" style={{ marginRight: "1rem" }}>
-        Buggy Page
+      <Link to="/buggy" className="nav-link">
+         Page 1
       </Link>
-      <Link to="/fixed">Fixed Page</Link>
+      <Link to="/fixed" className="nav-link">Page 2</Link>
     </nav>
   );
 }

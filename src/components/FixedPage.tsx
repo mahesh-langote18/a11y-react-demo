@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import FocusLock from "react-focus-lock";
+import giveAcessImage from "../assets/give-access.png";
+
 
 export default function FixedPage() {
   const [showModal, setShowModal] = useState(false);
@@ -12,18 +14,18 @@ export default function FixedPage() {
   }, [showModal]);
 
   return (
-    <div>
+    <div className="fixed-page">
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
 
-      <h1>Accessible Page</h1>
-
-      <img src="/logo.png" alt="Company logo" />
-
-      <button aria-label="Trigger alert" onClick={() => alert("clicked")}>
+      <h1>Accessibility Page 2</h1>
+      <button className="icon-btn" aria-label="Trigger alert" onClick={() => alert("clicked")}>
         🔔
       </button>
+      <img src={giveAcessImage} alt="Man 3d image" />
+
+<div className="page-content">
 
       <h2 id="main-content">Page Content</h2>
 
@@ -54,8 +56,9 @@ export default function FixedPage() {
       <p style={{ color: "#333", backgroundColor: "#fff" }}>
         Accessible contrast text
       </p>
+      </div>
+      <a href="#main-content" className="bk-link">Back to content</a>
 
-      <a href="#main-content">Back to content</a>
     </div>
   );
 }
