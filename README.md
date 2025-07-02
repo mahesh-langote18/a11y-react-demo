@@ -6,11 +6,11 @@ This project is a live demonstration of **web accessibility best practices and c
 
 ## 🔀 Pages
 
-### 🐞 `/buggy`
+### 🐞 `/buggy` : https://mahesh-langote18.github.io/a11y-react-demo/#/buggy
 - Includes 10 common accessibility issues (e.g., missing labels, focus traps, low contrast, ARIA misuse).
 - Useful for demonstrating Axe, Lighthouse, and manual testing failures.
 
-### ✅ `/fixed`
+### ✅ `/fixed` : https://mahesh-langote18.github.io/a11y-react-demo/#/fixed
 - Proper use of semantic HTML, focus management, ARIA roles, and color contrast.
 - Implements a fully accessible modal using `react-focus-lock`.
 
@@ -36,9 +36,11 @@ This project is a live demonstration of **web accessibility best practices and c
 ## 📸 Demo
 
 ### Buggy Page
+https://mahesh-langote18.github.io/a11y-react-demo/#/buggy
 ![Buggy Page Screenshot](./screenshots/buggy-page.png)
 
 ### Fixed Page
+https://mahesh-langote18.github.io/a11y-react-demo/#/fixed
 ![Fixed Page Screenshot](./screenshots/fixed-page.png)
 
 ---
